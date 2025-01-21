@@ -3,6 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.work-sans-font {
+  font-family: "Work Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 /* custom design */
 :root {
   --primary-color: #fea301;
@@ -61,6 +68,47 @@ main {
 /* hero section */
 .hero {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  gap: 50px;
+}
+.main-content {
+  max-width: 640px;
+}
+h1 {
+  font-size: 3.5rem;
+}
+.empowering {
+  color: var(--primary-color);
+}
+.towards {
+  color: skyblue;
+}
+.heading-content {
+  font-size: 1.2rem;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.btn-primary {
+  height: 50px;
+  width: 200px;
+  gap: 10px;
+  background-color: black;
+  color: aliceblue;
+  font-weight: bold;
+  border-radius: 12px;
+  font-size: 1.2rem;
+}
+
+/* media query for hero section */
+@media screen and (max-width: 576px) {
+  .hero {
+    flex-direction: column-reverse;
+    margin: 20px;
+  }
+  .main-content {
+    /* align-items: center; */
+    /* align-content: center; */
+    justify-items: center;
+  }
 }
